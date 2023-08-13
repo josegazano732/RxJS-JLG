@@ -8,37 +8,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterComponent implements OnInit {
 
-   valores: number[]=[18,25,34,44,55,68,72,83,91,102];
+  valores: number[]=[18,25,34,44,55,68,72,83,91,102];
+  frutas:string[]=['Manzana','Pera','Banana','sandia','Durazno'];
 
    nuevoValores: number[]=[];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.filtrar();
+    //this.filtrarNum(75);
+    this.filtrarfrutas();
+    
 
   }
 
 
   
-  filtrar(){
+  filtrarNum(valor:number){
+    this.valores.filter( (valores:number, _index:number, _array:number[])=>{
+      if (valores<=valor) {
+        //console.log('Es True',valores, 'Indice: ', index);
+        this.nuevoValores.push(valores);
+        console.log(this.nuevoValores);
+      }   
+  });
+  }
 
-
-    this.nuevoValores= this.valores.filter( (valores:number, index:number, array:number[])=>{
-      if (valores<50) {
-        console.log('Es True');
+  filtrarfrutas(){
+    this.frutas.filter((valorActual:string,indice:number,array:string[]) => {
+      if (valorActual.length <= 6) {
+        console.log(valorActual);
         ;
       }
-
-    //console.log('Los valores ', valores, 'index', index);
-    //console.log('Array es: ', array);
-    
-    
-    
-    
-      
-  } )
+    })
   }
+
+
 
 
 }
