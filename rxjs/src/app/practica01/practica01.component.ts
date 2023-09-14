@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { observable, Observable } from 'rxjs';
 
 @Component({
@@ -31,6 +32,10 @@ export class Practica01Component implements OnInit {
       complete() { console.log('done'); }
     });
     console.log('just after subscribe');
+  }
+
+  irFiltro() {
+    
   }
 
 }

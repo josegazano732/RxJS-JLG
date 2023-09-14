@@ -18,8 +18,7 @@ export class FilterComponent implements OnInit {
   ngOnInit(): void {
     //this.filtrarNum(75);
     this.filtrarfrutas();
-    
-
+  
   }
 
 

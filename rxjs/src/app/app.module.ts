@@ -5,13 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Practica01Component } from './practica01/practica01.component';
 import { FilterComponent } from './Filter/filter.component';
+import { ViewmodeloComponent } from './componente/viewmodelo/viewmodelo.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Practica01Component,
-    FilterComponent
+    FilterComponent,
+    ViewmodeloComponent
   ],
   imports: [
     BrowserModule,
