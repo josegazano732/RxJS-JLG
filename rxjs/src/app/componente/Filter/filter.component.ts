@@ -35,12 +35,14 @@ export class FilterComponent implements OnInit {
 
   filtrarfrutas(){
     this.frutas.filter((valorActual:string,indice:number,array:string[]) => {
-      if (valorActual.length <= 6) {
+      if (valorActual.length <= 4) {
         console.log(valorActual);
-        ;
+        
       }
     })
   }
+
+
 
 
 
