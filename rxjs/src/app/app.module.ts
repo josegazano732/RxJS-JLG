@@ -9,6 +9,7 @@ import { ViewmodeloComponent } from './componente/viewmodelo/viewmodelo.componen
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { FilterComponent } from './componente/Filter/filter.component';
+import { PrincipalComponent } from './page/principal/principal.component';
 
 
 
@@ -19,7 +20,8 @@ import { FilterComponent } from './componente/Filter/filter.component';
     FilterComponent,
     ViewmodeloComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,

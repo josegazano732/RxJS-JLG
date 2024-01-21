@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "rxjs"
+  "defaultProject": "rxjs",
+  "cli": {
+    "analytics": false
+  }
 }
