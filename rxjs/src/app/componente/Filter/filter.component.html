@@ -1,11 +1,24 @@
 
+  <div class=" container mx-auto">
     <h3>filter Uno</h3>
 
-    <div>
-        <div *ngFor="let fruta of frutas" class=" alert-danger">
-            <li> {{fruta | uppercase}} </li>
+    <div class="d-flex justify-content-evenly m-5 ">
+        <div  class="">
+            <ul *ngFor="let fruta of frutas">
+                <li> {{fruta | uppercase}} </li>
+            </ul>
+            
+        </div>
+
+
+        <div class=" ">
+            <ul *ngFor="let fruta of frutas" class="list-inline">
+                <li class="list-inline-item">{{fruta | uppercase}}</li>
+            </ul>
         </div>
     </div>
 
+  </div>
+  
 
 

@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FilterComponent implements OnInit {
 
   valores: number[]=[18,25,34,44,55,68,72,83,91,102];
-  frutas:string[]=['Manzana','Pera','Banana','sandia','Durazno'];
+  frutas:string[]=['Manzanita','Pera','Banana','sandia','Durazno'];
 
    nuevoValores: number[]=[];
 
