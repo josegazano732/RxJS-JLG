@@ -3,9 +3,14 @@
     <h3>filter Uno</h3>
 
     <div class="d-flex justify-content-evenly m-5 ">
-        <div  class="">
-            <ul *ngFor="let fruta of frutas">
-                <li> {{fruta | uppercase}} </li>
+       
+        <div  class=" ">
+            <div >
+                <input type="number" [(ngModel)]="numeroValor" (ngModelChange)="filtrarNum($event)">
+            </div>
+            
+            <ul *ngFor="let valor of nuevoValores">
+                <li> {{valor}} </li>
             </ul>
             
         </div>

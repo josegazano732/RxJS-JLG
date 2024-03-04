@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
+
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
@@ -11,14 +13,21 @@ export class FilterComponent implements OnInit {
   valores: number[]=[18,25,34,44,55,68,72,83,91,102];
   frutas:string[]=['Manzanita','Pera','Banana','sandia','Durazno'];
 
+  numeroValor:number | undefined;
+
    nuevoValores: number[]=[];
+
+   nuevaFrutas: string[]=[];
+value: any;
+name: any;
 
   constructor() { }
 
   ngOnInit(): void {
     //this.filtrarNum(75);
-    this.filtrarfrutas();
-  
+    this.filtrarNum(25);
+    
+    
   }
 
 
@@ -35,7 +44,8 @@ export class FilterComponent implements OnInit {
 
   filtrarfrutas(){
     this.frutas.filter((valorActual:string,indice:number,array:string[]) => {
-      if (valorActual.length <= 4) {
+      if (valorActual.length <= 2) {
+        
         console.log(valorActual);
         
       }
