@@ -25,7 +25,7 @@ name: any;
 
   ngOnInit(): void {
     //this.filtrarNum(75);
-    this.filtrarNum(25);
+    
     
     
   }

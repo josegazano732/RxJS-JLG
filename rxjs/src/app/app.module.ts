@@ -13,6 +13,8 @@ import { FilterComponent } from './componente/Filter/filter.component';
 import { PrincipalComponent } from './page/principal/principal.component';
 import { SecundarioComponent } from './page/secundario/secundario.component';
 import { FormsModule } from '@angular/forms';
+import { ObservableComponent } from './componente/observable/observable.component';
+import { TerceroComponent } from './page/tercero/tercero.component';
 
 
 
@@ -25,6 +27,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     PrincipalComponent,
     SecundarioComponent,
+    ObservableComponent,
+    TerceroComponent,
     
   ],
   imports: [
